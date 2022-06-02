@@ -1,8 +1,11 @@
-﻿namespace transaction_management.Models
+﻿using System.Text.Json.Serialization;
+
+namespace transaction_management.Models
 {
 	public class TransactionRequest
 	{
-		public TransactionRequest(string account_id, int amount)
+		[JsonConstructor]
+        public TransactionRequest(string account_id, int amount)
 		{
 			AccountId = account_id;
 			Amount = amount;
