@@ -1,11 +1,9 @@
-import React from "react";
-import "./App.css";
 import { AccountDashboard } from "./components/account-dashboard";
 
 const DATA_STORE = {
   user: {
     name: "Domhnall Gleeson",
-    img: "./profile-photo.png",
+    img: "profile-photo.png",
   },
   account: {
     nr: "45679821545",
