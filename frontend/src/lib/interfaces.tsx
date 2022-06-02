@@ -13,6 +13,7 @@ export interface IAccountInfoDetail {
 }
 
 export interface ITransactionDetail {
+  id: string;
   recipient: string;
   lineitem: string;
   timestamp: string;

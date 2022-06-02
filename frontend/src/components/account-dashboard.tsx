@@ -15,7 +15,7 @@ export function AccountDashboard(props: { data: IData }) {
   return (
     <main>
       <p>Account Dashboard</p>
-      <AccountProfileInfo />
+      <AccountProfileInfo userInfo={data.user} account={data.account} />
       <section>
         <BalanceDashboard
           userInfo={data.user}
