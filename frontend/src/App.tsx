@@ -14,24 +14,28 @@ const DATA_STORE = {
   },
   transactions: [
     {
+      id: "001",
       recipient: "Behance",
       lineitem: "Behance Project",
       timestamp: "23 march 2021",
       amount: 320,
     },
     {
+      id: "002",
       recipient: "Behance",
       lineitem: "Behance Project",
       timestamp: "23 march 2021",
       amount: 320,
     },
     {
+      id: "003",
       recipient: "Behance",
       lineitem: "Behance Project",
       timestamp: "23 march 2021",
       amount: 320,
     },
     {
+      id: "004",
       recipient: "Behance",
       lineitem: "Behance Project",
       timestamp: "23 march 2021",
