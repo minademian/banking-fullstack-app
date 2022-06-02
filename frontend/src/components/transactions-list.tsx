@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import {
-  IData,
-  ITransactionDetail,
-  TTransactionsList,
-} from "../lib/interfaces";
+import { useState } from "react";
+
+import { TTransactionsList } from "../lib/interfaces";
 
 export function TransactionsList(props: { list: TTransactionsList }) {
   const [list, updateList] = useState(props.list);
@@ -11,14 +8,16 @@ export function TransactionsList(props: { list: TTransactionsList }) {
   return (
     <div>
       <h4>Recent transactions</h4>
-      <ul>
-        {list.map((transaction) => 
+      {list.map((transaction) => (
+        <>
+          <ul>
             <li key={transaction.id}>{transaction.recipient}</li>
             <li key={transaction.id}>{transaction.lineitem}</li>
             <li key={transaction.id}>{transaction.timestamp}</li>
             <li key={transaction.id}>{transaction.amount}</li>
-        )}
-      </ul>
+          </ul>
+        </>
+      ))}
     </div>
   );
 }
