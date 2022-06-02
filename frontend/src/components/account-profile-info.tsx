@@ -1,5 +1,10 @@
 import React from "react";
 
 export function AccountProfileInfo() {
-  return <p>account profile info</p>;
+  return (
+    <div>
+      <img></img>
+      <caption></caption>
+    </div>
+  );
 }

@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 
-export function SalaryWidget() {
-  return <p>salary widget</p>;
+export function SalaryWidget(props: { salary: number }) {
+  const [salary, updateSalary] = useState(props.salary);
+
+  return <p>salary is {salary}</p>;
 }
