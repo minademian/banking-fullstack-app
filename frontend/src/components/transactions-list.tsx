@@ -8,5 +8,17 @@ import {
 export function TransactionsList(props: { list: TTransactionsList }) {
   const [list, updateList] = useState(props.list);
 
-  return <p>transactions list</p>;
+  return (
+    <div>
+      <h4>Recent transactions</h4>
+      <ul>
+        {list.map((transaction) => 
+            <li key={transaction.id}>{transaction.recipient}</li>
+            <li key={transaction.id}>{transaction.lineitem}</li>
+            <li key={transaction.id}>{transaction.timestamp}</li>
+            <li key={transaction.id}>{transaction.amount}</li>
+        )}
+      </ul>
+    </div>
+  );
 }
