@@ -1,4 +1,9 @@
-﻿var builder = WebApplication.CreateBuilder(args);
+﻿// TODO: https://docs.microsoft.com/en-us/aspnet/core/security/app-secrets?view=aspnetcore-6.0&tabs=windows
+// TODO: https://auth0.com/blog/secret-management-in-dotnet-applications/
+// TODO: https://www.stevejgordon.co.uk/using-generic-host-in-dotnet-core-console-based-microservices
+// TODO: migrations and configuring database string
+
+var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 
